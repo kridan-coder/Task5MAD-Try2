@@ -8,9 +8,11 @@
 import UIKit
 
 class ViewControllerHello: UIViewController {
-
+    @IBOutlet weak var enterButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        enterButton.layer.cornerRadius = 12
         // Do any additional setup after loading the view.
     }
 
