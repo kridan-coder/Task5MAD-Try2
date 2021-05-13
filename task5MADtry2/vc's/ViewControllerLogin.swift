@@ -52,7 +52,24 @@ class ViewControllerLogin: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    func saveUserData(email: String, password: String, token: String){
+        let defaults = UserDefaults.standard
+        defaults.setValue(email, forKey: "email")
+        defaults.setValue(password, forKey: "password")
+        defaults.setValue(token, forKey: "token")
+    }
 
+    @IBAction func enterButtonPressed() {
+        if emailField.text == "" || !(emailField.text?.contains("@") ?? false){
+            print("Invalid Email.")
+            return
+        }
+        
+        if passwordField.text == "" {
+            print("Invalid Password.")
+            return
+        }
+    }
     /*
     // MARK: - Navigation
 

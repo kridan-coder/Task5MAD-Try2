@@ -144,6 +144,9 @@
                                 <state key="normal" title="В О Й Т И">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="enterButtonPressed" destination="XGY-Vk-0Xb" eventType="touchUpInside" id="plI-fA-poC"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lze-JH-rco" userLabel="Пароль">
                                 <rect key="frame" x="32" y="369.5" width="350" height="60"/>
