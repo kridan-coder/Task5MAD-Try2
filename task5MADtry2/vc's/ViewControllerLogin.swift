@@ -59,6 +59,22 @@ class ViewControllerLogin: UIViewController, UITextFieldDelegate {
         defaults.setValue(token, forKey: "token")
     }
 
+    func safeDataAndMoveFurther(_ data: SignInResponse){
+        if data.token == "" {return}
+        
+        saveUserData(email: emailField.text!, password: passwordField.text!, token: data.token)
+        
+        
+    }
+    
+    func login(){
+        ApiClient().signIn(parameters: SignInRequest(email: emailField.text!, password: passwordField.text!)){ response in
+            
+            self.safeDataAndMoveFurther(response)
+            
+        }
+    }
+    
     @IBAction func enterButtonPressed() {
         if emailField.text == "" || !(emailField.text?.contains("@") ?? false){
             print("Invalid Email.")
@@ -69,6 +85,8 @@ class ViewControllerLogin: UIViewController, UITextFieldDelegate {
             print("Invalid Password.")
             return
         }
+        
+        login()
     }
     /*
     // MARK: - Navigation
