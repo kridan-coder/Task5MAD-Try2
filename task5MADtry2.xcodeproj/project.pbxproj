@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		209EB8BF0709639E933CDD4C /* Pods_task5MADtry2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F14394E66BCB28D595221A /* Pods_task5MADtry2Tests.framework */; };
 		93BC6D5C264D0AA100566508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6D5B264D0AA100566508 /* AppDelegate.swift */; };
 		93BC6D5E264D0AA100566508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6D5D264D0AA100566508 /* SceneDelegate.swift */; };
-		93BC6D60264D0AA100566508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6D5F264D0AA100566508 /* ViewController.swift */; };
+		93BC6D60264D0AA100566508 /* ViewControllerHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6D5F264D0AA100566508 /* ViewControllerHello.swift */; };
 		93BC6D63264D0AA100566508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BC6D61264D0AA100566508 /* Main.storyboard */; };
 		93BC6D65264D0AA300566508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BC6D64264D0AA300566508 /* Assets.xcassets */; };
 		93BC6D68264D0AA300566508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BC6D66264D0AA300566508 /* LaunchScreen.storyboard */; };
@@ -55,6 +55,8 @@
 		93BC6DE0264D0B2200566508 /* Alegreya-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93BC6DC4264D0B2200566508 /* Alegreya-ExtraBold.ttf */; };
 		93BC6DE1264D0B2200566508 /* Alegreya-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93BC6DC4264D0B2200566508 /* Alegreya-ExtraBold.ttf */; };
 		93BC6DE2264D0B2200566508 /* Alegreya-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93BC6DC4264D0B2200566508 /* Alegreya-ExtraBold.ttf */; };
+		93BC6DFD264D0DB100566508 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6DFC264D0DB100566508 /* ViewControllerLogin.swift */; };
+		93BC6E09264D0DC200566508 /* ViewControllerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6E08264D0DC200566508 /* ViewControllerRegister.swift */; };
 		A6BB6E6518D0B433D871ABCC /* Pods_task5MADtry2_task5MADtry2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5C1F2FFA6D5B1E7572F2CA /* Pods_task5MADtry2_task5MADtry2UITests.framework */; };
 		AAF4A56ED6C8F1947BF49E90 /* Pods_task5MADtry2_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9922C6CB75A60C1342EE1B9 /* Pods_task5MADtry2_WatchKit_App.framework */; };
 		D42C334444D217A15E6EE95F /* Pods_task5MADtry2_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE7B2F426DE8D6A2BBD7ABE /* Pods_task5MADtry2_WatchKit_Extension.framework */; };
@@ -129,7 +131,7 @@
 		93BC6D58264D0AA100566508 /* task5MADtry2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = task5MADtry2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BC6D5B264D0AA100566508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93BC6D5D264D0AA100566508 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93BC6D5F264D0AA100566508 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93BC6D5F264D0AA100566508 /* ViewControllerHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHello.swift; sourceTree = "<group>"; };
 		93BC6D62264D0AA100566508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93BC6D64264D0AA300566508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93BC6D67264D0AA300566508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -162,6 +164,8 @@
 		93BC6DC2264D0B2100566508 /* Alegreya-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Medium.ttf"; sourceTree = "<group>"; };
 		93BC6DC3264D0B2100566508 /* Alegreya-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Black.ttf"; sourceTree = "<group>"; };
 		93BC6DC4264D0B2200566508 /* Alegreya-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-ExtraBold.ttf"; sourceTree = "<group>"; };
+		93BC6DFC264D0DB100566508 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
+		93BC6E08264D0DC200566508 /* ViewControllerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegister.swift; sourceTree = "<group>"; };
 		C9922C6CB75A60C1342EE1B9 /* Pods_task5MADtry2_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_task5MADtry2_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9AF130B3E49DB9DEFC8916 /* Pods-task5MADtry2 WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-task5MADtry2 WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-task5MADtry2 WatchKit App/Pods-task5MADtry2 WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		CF5C1F2FFA6D5B1E7572F2CA /* Pods_task5MADtry2_task5MADtry2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_task5MADtry2_task5MADtry2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,7 +245,6 @@
 				65EC87708342A4F7CCA53C15 /* Pods-task5MADtry2Tests.debug.xcconfig */,
 				F20CC8349F70048353150D40 /* Pods-task5MADtry2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,9 +278,9 @@
 		93BC6D5A264D0AA100566508 /* task5MADtry2 */ = {
 			isa = PBXGroup;
 			children = (
+				93BC6DFB264D0D9400566508 /* vc's */,
 				93BC6D5B264D0AA100566508 /* AppDelegate.swift */,
 				93BC6D5D264D0AA100566508 /* SceneDelegate.swift */,
-				93BC6D5F264D0AA100566508 /* ViewController.swift */,
 				93BC6D61264D0AA100566508 /* Main.storyboard */,
 				93BC6D64264D0AA300566508 /* Assets.xcassets */,
 				93BC6D66264D0AA300566508 /* LaunchScreen.storyboard */,
@@ -343,6 +346,16 @@
 				93BC6DBB264D0B1F00566508 /* Alegreya-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93BC6DFB264D0D9400566508 /* vc's */ = {
+			isa = PBXGroup;
+			children = (
+				93BC6D5F264D0AA100566508 /* ViewControllerHello.swift */,
+				93BC6DFC264D0DB100566508 /* ViewControllerLogin.swift */,
+				93BC6E08264D0DC200566508 /* ViewControllerRegister.swift */,
+			);
+			path = "vc's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -739,7 +752,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BC6D60264D0AA100566508 /* ViewController.swift in Sources */,
+				93BC6E09264D0DC200566508 /* ViewControllerRegister.swift in Sources */,
+				93BC6DFD264D0DB100566508 /* ViewControllerLogin.swift in Sources */,
+				93BC6D60264D0AA100566508 /* ViewControllerHello.swift in Sources */,
 				93BC6D5C264D0AA100566508 /* AppDelegate.swift in Sources */,
 				93BC6D5E264D0AA100566508 /* SceneDelegate.swift in Sources */,
 			);
