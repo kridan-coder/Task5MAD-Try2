@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 class ViewControllerHome: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelAvatar: UILabel!
+    @IBOutlet weak var imageAvatar: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var dataSetCollectionView: [Data]! = []
@@ -36,6 +38,10 @@ class ViewControllerHome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = UserDefaults.standard
+        
+        //imageAvatar.kf.setImage(with: URL(string: defaults.string(forKey: "image")!))
+        //labelAvatar.text = defaults.string(forKey: "description")
         requestFeelings()
         
     }

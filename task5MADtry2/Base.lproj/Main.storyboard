@@ -349,7 +349,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsk-0I-y14">
                                                     <rect key="frame" x="33" y="80" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="16"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </label>
                                             </subviews>
@@ -364,6 +364,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="Wsk-0I-y14" secondAttribute="bottom" id="srF-KI-j2f"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="109" height="108.5"/>
                                         <connections>
                                             <outlet property="cellImageView" destination="7bi-N4-jOW" id="NBe-AD-vLV"/>
@@ -408,6 +409,8 @@
                     <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="HomeChosen" id="Yaf-ge-6Ni"/>
                     <connections>
                         <outlet property="collectionView" destination="e3t-iu-kvw" id="Oqh-9n-Xmd"/>
+                        <outlet property="imageAvatar" destination="yXC-wt-sCi" id="2aQ-jf-dzp"/>
+                        <outlet property="labelAvatar" destination="TPg-or-wQU" id="CQn-EP-t9o"/>
                         <outlet property="tableView" destination="2su-A3-1Ei" id="FzC-vP-w43"/>
                     </connections>
                 </viewController>
