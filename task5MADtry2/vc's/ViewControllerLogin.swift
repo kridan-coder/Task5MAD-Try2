@@ -60,10 +60,14 @@ class ViewControllerLogin: UIViewController, UITextFieldDelegate {
     }
 
     func safeDataAndMoveFurther(_ data: SignInResponse){
-        if data.token == "" {return}
+        if data.token == nil {return}
         
-        saveUserData(email: emailField.text!, password: passwordField.text!, token: data.token)
+        saveUserData(email: emailField.text!, password: passwordField.text!, token: data.token!)
+        let vc = self.storyboard!.instantiateViewController(identifier: "tabBar")
         
+        print("Login Success.")
+        
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
