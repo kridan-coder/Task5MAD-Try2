@@ -60,6 +60,7 @@
 		93BC6E10264D1DA300566508 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6E0F264D1DA300566508 /* ApiClient.swift */; };
 		93BC6E1C264D1DAD00566508 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6E0F264D1DA300566508 /* ApiClient.swift */; };
 		93BC6E23264D2EC400566508 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6E22264D2EC400566508 /* ViewControllerHome.swift */; };
+		93BC6E2B264D30C800566508 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC6E2A264D30C800566508 /* CollectionViewCell.swift */; };
 		A6BB6E6518D0B433D871ABCC /* Pods_task5MADtry2_task5MADtry2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5C1F2FFA6D5B1E7572F2CA /* Pods_task5MADtry2_task5MADtry2UITests.framework */; };
 		AAF4A56ED6C8F1947BF49E90 /* Pods_task5MADtry2_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9922C6CB75A60C1342EE1B9 /* Pods_task5MADtry2_WatchKit_App.framework */; };
 		D42C334444D217A15E6EE95F /* Pods_task5MADtry2_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE7B2F426DE8D6A2BBD7ABE /* Pods_task5MADtry2_WatchKit_Extension.framework */; };
@@ -171,6 +172,7 @@
 		93BC6E08264D0DC200566508 /* ViewControllerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegister.swift; sourceTree = "<group>"; };
 		93BC6E0F264D1DA300566508 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		93BC6E22264D2EC400566508 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		93BC6E2A264D30C800566508 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C9922C6CB75A60C1342EE1B9 /* Pods_task5MADtry2_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_task5MADtry2_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9AF130B3E49DB9DEFC8916 /* Pods-task5MADtry2 WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-task5MADtry2 WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-task5MADtry2 WatchKit App/Pods-task5MADtry2 WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		CF5C1F2FFA6D5B1E7572F2CA /* Pods_task5MADtry2_task5MADtry2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_task5MADtry2_task5MADtry2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +286,7 @@
 		93BC6D5A264D0AA100566508 /* task5MADtry2 */ = {
 			isa = PBXGroup;
 			children = (
+				93BC6E29264D30B100566508 /* models */,
 				93BC6DFB264D0D9400566508 /* vc's */,
 				93BC6D5B264D0AA100566508 /* AppDelegate.swift */,
 				93BC6D5D264D0AA100566508 /* SceneDelegate.swift */,
@@ -363,6 +366,14 @@
 				93BC6E22264D2EC400566508 /* ViewControllerHome.swift */,
 			);
 			path = "vc's";
+			sourceTree = "<group>";
+		};
+		93BC6E29264D30B100566508 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				93BC6E2A264D30C800566508 /* CollectionViewCell.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -761,6 +772,7 @@
 			files = (
 				93BC6E09264D0DC200566508 /* ViewControllerRegister.swift in Sources */,
 				93BC6DFD264D0DB100566508 /* ViewControllerLogin.swift in Sources */,
+				93BC6E2B264D30C800566508 /* CollectionViewCell.swift in Sources */,
 				93BC6E23264D2EC400566508 /* ViewControllerHome.swift in Sources */,
 				93BC6D60264D0AA100566508 /* ViewControllerHello.swift in Sources */,
 				93BC6D5C264D0AA100566508 /* AppDelegate.swift in Sources */,

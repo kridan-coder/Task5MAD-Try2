@@ -27,6 +27,18 @@ struct SignInResponse: Decodable {
     var token: String? = nil
 }
 
+struct Data: Decodable {
+    var id: Int? = nil
+    var title: String? = nil
+    var image: String? = nil
+    var position: Int? = nil
+}
+
+struct FeelingsResponse: Decodable {
+    var success: Bool? = nil
+    var data: [Data]? = nil
+}
+
 class ApiClient {
 
     static let baseURL = "http://mskko2021.mad.hakta.pro/api/"
@@ -39,6 +51,20 @@ class ApiClient {
             case .success(let data):
                 guard let safeData = data else {return}
                 onSuccess(try! JSONDecoder().decode(SignInResponse.self, from: safeData))
+            case .failure(let data):
+                print("Error: \(data.errorDescription ?? "Unknown")")
+            }
+        }
+        
+    }
+    
+    func getFeelings(onSuccess: @escaping (FeelingsResponse) -> Void){
+        AF.request(ApiClient.baseURL + "/feelings", method: .get).response {response in
+            switch response.result {
+            
+            case .success(let data):
+                guard let safeData = data else {return}
+                onSuccess(try! JSONDecoder().decode(FeelingsResponse.self, from: safeData))
             case .failure(let data):
                 print("Error: \(data.errorDescription ?? "Unknown")")
             }
