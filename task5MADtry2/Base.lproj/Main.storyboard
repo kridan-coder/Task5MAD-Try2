@@ -244,7 +244,7 @@
             </objects>
             <point key="canvasLocation" x="1080" y="161"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="BCd-Np-qRF">
             <objects>
                 <viewController id="VQL-za-sHa" sceneMemberID="viewController">
@@ -254,13 +254,13 @@
                         <viewLayoutGuide key="safeArea" id="jDl-Do-9q8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="AYQ-7X-SA4"/>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" id="AYQ-7X-SA4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRZ-LR-wPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3963" y="-663"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="xHc-UV-mw0">
             <objects>
                 <viewController id="Ozo-RX-Tit" sceneMemberID="viewController">
@@ -270,13 +270,13 @@
                         <viewLayoutGuide key="safeArea" id="aik-ih-5xT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="4Qf-QN-h0K"/>
+                    <tabBarItem key="tabBarItem" title="" image="Sound" id="4Qf-QN-h0K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EnW-90-e3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3962" y="61"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="ZGF-by-8BL">
             <objects>
                 <viewController id="aAu-26-pqy" sceneMemberID="viewController">
@@ -286,7 +286,7 @@
                         <viewLayoutGuide key="safeArea" id="bPu-Rx-zJq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Yaf-ge-6Ni"/>
+                    <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="HomeChosen" id="Yaf-ge-6Ni"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uK-AH-S7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,11 +295,12 @@
         <!--Tab Bar Controller-->
         <scene sceneID="P55-F9-MpA">
             <objects>
-                <tabBarController id="OCa-yd-rKk" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t2p-tv-ObS">
+                <tabBarController storyboardIdentifier="tabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OCa-yd-rKk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="t2p-tv-ObS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.1450980392" green="0.20000000000000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="aAu-26-pqy" kind="relationship" relationship="viewControllers" id="RGJ-TX-tQ0"/>
@@ -334,8 +335,12 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="750" height="1624"/>
+        <image name="Home" width="26" height="26"/>
+        <image name="HomeChosen" width="40" height="39"/>
         <image name="Leaves" width="375" height="224"/>
         <image name="Logo" width="375" height="439"/>
+        <image name="Profile" width="18" height="22"/>
+        <image name="Sound" width="22" height="20"/>
         <image name="WelcomeText" width="232" height="118"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
