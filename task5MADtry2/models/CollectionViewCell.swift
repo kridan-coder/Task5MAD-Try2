@@ -6,7 +6,22 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var cellImageView: UIImageView!
     
+
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    
+    var data: Data! {
+        didSet{
+
+            cellImageView.kf.setImage(with: URL(string: data.image ?? "no url("))
+            
+            labelTitle.text = data.title
+            
+        }
+    }
 }

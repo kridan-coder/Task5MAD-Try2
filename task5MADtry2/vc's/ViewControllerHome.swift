@@ -11,6 +11,10 @@ class ViewControllerHome: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var dataSetCollectionView: [Data]! = []
+    
+
+    
     func initCollectionView(){
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -18,8 +22,21 @@ class ViewControllerHome: UIViewController {
     }
     
     func initTableView(){}
+    
+    func requestFeelings(){
+        ApiClient().getFeelings{ response in
+            self.dataSetCollectionView = response.data!
+            self.dataSetCollectionView.sort{x, y in
+                return x.position! > y.position!
+            }
+            self.initCollectionView()
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        requestFeelings()
         
     }
 }
@@ -28,10 +45,12 @@ extension ViewControllerHome: UICollectionViewDelegate{}
 
 extension ViewControllerHome: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        dataSetCollectionView.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellCollection", for: indexPath) as! CollectionViewCell
+        cell.data = dataSetCollectionView[indexPath.item]
+        return cell
     }
 }
