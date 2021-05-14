@@ -33,11 +33,13 @@ struct Data: Decodable {
     var image: String? = nil
     var position: Int? = nil
 }
-
+//saasa
 struct FeelingsResponse: Decodable {
     var success: Bool? = nil
     var data: [Data]? = nil
 }
+
+struct anime: Decodable {}
 
 class ApiClient {
 
